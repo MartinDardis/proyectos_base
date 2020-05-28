@@ -1,0 +1,46 @@
+<h1>Bienvenido, {{user.name}}!</h1>
+<div class="alert alert-primary">
+  <p>Esto es un aviso poco importante</p>
+</div>
+<div class="row">
+  <div class="col-6">
+    <nb-card>
+      <nb-card-header>Tareas Pendientes</nb-card-header>
+      <nb-card-body>
+        <nb-accordion multi>
+          <nb-accordion-item [expanded]="true">
+            <nb-accordion-item-header>Tarea 1</nb-accordion-item-header>
+            <nb-accordion-item-body class="item-body-background">
+              <ul>
+                <li><strong>Estado:</strong> Error</li>
+              </ul>
+            </nb-accordion-item-body>
+          </nb-accordion-item>
+          <nb-accordion-item >
+            <nb-accordion-item-header>Tarea 2</nb-accordion-item-header>
+            <nb-accordion-item-body class="item-body-background">
+              <ul>
+                <li><strong>Estado:</strong> Pendiente de aprobación</li>
+              </ul>
+            </nb-accordion-item-body>
+          </nb-accordion-item>
+          <nb-accordion-item >
+            <nb-accordion-item-header>Tarea 3</nb-accordion-item-header>
+            <nb-accordion-item-body class="item-body-background">
+              Descripcion tarea 3
+            </nb-accordion-item-body>
+          </nb-accordion-item>
+        </nb-accordion>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-6">
+    <nb-card>
+      <nb-card-header>Mensajes</nb-card-header>
+      <nb-card-body>
+        <strong>No tenes mensajes nuevos</strong>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
+
